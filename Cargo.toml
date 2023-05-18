@@ -1,0 +1,21 @@
+[package]
+name = "boggle"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ciborium = "0.2.0"
+clap = { version = "4.1.13", features = ["derive"] }
+linked_hash_set = "0.1.4"
+pad = "0.1.6"
+ron = "0.8.0"
+sequence_trie = { version = "0.3.6", features = ["serde"] }
+serde = { version = "1.0.158", features = ["serde_derive"] }
+termsize = "0.1.6"
+text_io = "0.1.12"
+yansi = "0.5.1"
+
+[profile.release]
+debug = true
